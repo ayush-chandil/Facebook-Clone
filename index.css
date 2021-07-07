@@ -1,0 +1,346 @@
+*{
+    margin:0;
+   
+}
+
+
+.left_header img{
+    height:40px;
+
+}
+
+.header_content img{
+    height:40px;
+}
+
+.middle_header{
+    display:flex;
+    
+    
+}
+
+.header_content{
+    display:flex;
+}
+
+.middle_header{
+ float: left; 
+ margin:2px;
+}
+			
+.header_icon {
+ float: left; 
+ margin:10px;
+ padding:10px;
+ align-items:center;
+ color:grey;
+}
+
+.header_icon:hover{
+    color:darkturquoise;
+    cursor:pointer;
+}
+
+.left_header{
+    margin:2px;
+    display:flex;
+}
+               
+ .input_header {
+    margin-left:10px;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    border-radius:90px;
+    background-color:cornsilk;
+    
+   }
+
+ .input_header input{
+   background-color: transparent;
+   outline-width:0;
+   border:none;
+}
+
+  
+   
+.right_header{
+    margin:2px;
+    display:flex;
+    
+}
+               
+.icons {
+    margin-left:10px;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    color:grey;
+   }
+
+.icons:hover{
+       color:darkturquoise;
+       cursor:pointer;
+   }
+
+
+
+.header{
+    display:flex;
+    padding-left:2px;
+    justify-content:space-between;
+    align-items: baseline;
+    box-shadow:0 5px 8px -9px black;
+    
+}
+
+
+.sidebar-row img{
+    height:40px;
+    padding-left:2px;
+}
+
+.sidebar-row{
+  display:flex;
+  cursor:pointer;
+  padding:10px;
+  align-items: center;
+  color:#2e81f4;
+ 
+}
+
+.sidebar-row:hover{
+    
+    border-radius: 10px;
+}
+
+.sidebar-row h4{
+    margin-left:15px;
+    font-weight:200;
+}
+
+.main body{
+   padding-left:2px;
+}
+
+
+.story{
+    position:relative;
+    background-repeat: no-repeat;
+    display:flex;
+    cursor:pointer;
+    background-size:cover;
+    height:200px;
+    width:120px;
+    border-radius:10px;
+    box-shadow:0 5px 8px -9px black;
+    margin-right: 10px;
+    transition: transform 100ms ease-in;
+    
+}
+
+.story:hover {
+    transform: scale(1.07);
+  }
+  
+
+img.avatar{
+   margin:10px;
+   height:40px;
+}
+
+
+
+.stories{
+    display:flex;
+    
+}
+
+.main_body{
+    display:flex;
+    
+}
+
+body{
+    background-color:#f1f2f5;
+}
+
+
+.feed{
+    display:flex;
+    padding:30px 100px;
+    flex:1;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.sidebar{
+    padding:25px 10px;
+    flex:0.33;
+}
+
+
+.message-bottom{
+    display:flex;
+    justify-content: space-evenly;
+    position:relative;
+}
+
+.message{
+    box-shadow: 0 5px 7px -7px rgba(0,0,0,0.75);
+    border-radius:15px;
+    width:90%;
+    flex-direction:column;
+    margin-top:30px;
+    
+}
+
+.message-header{
+    display:flex;
+    padding:15px;
+    align-items:center;
+}
+
+.message-input{
+  flex:1;
+  outline-width:0;
+  border-radius:90px;
+  padding:15px 20px;
+  margin:0 10px;
+  
+}
+
+.message-sender{
+    align-items:center;
+    padding:8px;
+    color:grey;
+    display:flex;
+    margin:5px;
+}
+
+.message-sender:hover{
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+.message-header form {
+    flex: 1;
+    display: flex;
+}
+
+
+.post{
+    box-shadow: 0 5px 7px -7px rgba(0,0,0,0.75);
+    border-radius:15px;
+    width:90%;
+    margin-top:15px;
+}
+
+.post_image img{
+    width:90%;
+    
+}
+
+.post-header{
+    align-items:center;
+    display:flex;
+    position:relative;
+    padding:20px;
+}
+
+.post-header img{
+    margin-right:20px;
+}
+
+.post-info h3{
+    font-size:medium;
+    color:cadetblue;
+}
+.post-info p{
+    font-size:medium;
+    color:chartreuse;
+}
+
+.post_options{
+    display:flex;
+    justify-content: space-evenly;
+    padding:15px;
+    padding-top:10px;
+    cursor:pointer;
+    border:1px solid lightgrey;
+}
+
+.message-inpost{
+    padding:15px 20px;
+    font-size: medium;
+}
+
+.post_option{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:5px;
+    flex:1;
+}
+
+.post_option p{
+    margin-left:10px;
+    color:grey;
+}
+
+
+.post_option:hover{
+    background-color:#f1f2f5;
+    color:cornflowerblue;
+}
+
+.widgets{
+    flex:0.33;
+}
+
+
+
+@media (max-width:768px){
+    .widgets{
+        display:none;
+    }
+    .feed{
+        margin-top:20px;
+        width:100%;
+        padding:0;
+    }
+
+    .story img{
+        width:40px;
+    }
+    .header_content{
+        display:none;
+    }
+
+    .input_header input{
+       display:none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .stories{
+        align-items: center;
+    }
+}
+
+
+
+@media (min-width: 320px) {
+    .stories {
+      width: 80%;
+      /* overflow-x: scroll; */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1440px) {
+    .feed {
+      width: 50%;
+      padding: 10px 50px;
+    }
+  }
